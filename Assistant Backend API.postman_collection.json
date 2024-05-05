@@ -1,0 +1,107 @@
+{
+	"info": {
+		"_postman_id": "848e19e7-b27b-4d99-8011-3d23ed8ff586",
+		"name": "Assistant Backend API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26403046"
+	},
+	"item": [
+		{
+			"name": "Create Assistant",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"harry osborn \",\r\n    \"mobile\": \"1234567890\",\r\n    \"email\": \"harry@example.com\",\r\n    \"salary\": 80000,\r\n    \"city\": \"New York\",\r\n    \"country\": \"INDIA\",\r\n    \"department\": \"photography\",\r\n    \"role\": \"Assistant\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/assistant",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"assistant"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Assistant",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/assistant/66377f9eba85b626e83ba4ab",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"assistant",
+						"66377f9eba85b626e83ba4ab"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Aditya Chauahn 2\",\r\n    \"mobile\": \"1234567890\",\r\n    \"email\": \"john@example.com\",\r\n    \"salary\": 80000,\r\n    \"city\": \"New York\",\r\n    \"country\": \"INDIA\",\r\n    \"department\": \"CSE\",\r\n    \"role\": \"Professor\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/assistant/663783a70b101b62b6fe7bc0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"assistant",
+						"663783a70b101b62b6fe7bc0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/assistant/66378248ee0946c74e68eee5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"assistant",
+						"66378248ee0946c74e68eee5"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
